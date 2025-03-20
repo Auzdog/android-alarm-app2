@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-merged_res-47:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-main-49:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-merged_res-47:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-main-49:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-merged_res-47:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-main-49:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-merged_res-47:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-main-49:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.alarmapp-merged_res-47:/drawable_ic_settings.xml.flat",
+        "source": "com.example.alarmapp-main-49:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.example.alarmapp-merged_res-47:/drawable_ic_bell.xml.flat",
+        "source": "com.example.alarmapp-main-49:/drawable/ic_bell.xml"
+    },
+    {
+        "merged": "com.example.alarmapp-merged_res-47:/drawable_ic_timer.xml.flat",
+        "source": "com.example.alarmapp-main-49:/drawable/ic_timer.xml"
+    },
+    {
+        "merged": "com.example.alarmapp-merged_res-47:/drawable_ic_add.xml.flat",
+        "source": "com.example.alarmapp-main-49:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "com.example.alarmapp-merged_res-47:/drawable_ic_clock.xml.flat",
+        "source": "com.example.alarmapp-main-49:/drawable/ic_clock.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-merged_res-47:\\menu_bottom_nav_menu.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-main-49:\\menu\\bottom_nav_menu.xml"
+    }
+]

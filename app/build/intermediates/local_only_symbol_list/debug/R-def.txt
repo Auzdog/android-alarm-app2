@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color ic_launcher_background
+color orange_500
+color orange_700
+color white
+drawable ic_add
+drawable ic_bell
+drawable ic_clock
+drawable ic_launcher_foreground
+drawable ic_settings
+drawable ic_timer
+id addAlarmButton
+id bottomNavigation
+id navigation_alarm
+id navigation_settings
+id navigation_stopwatch
+id navigation_timer
+id viewPager
+layout activity_main
+menu bottom_nav_menu
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Theme.AlarmApp

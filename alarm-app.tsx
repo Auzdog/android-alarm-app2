@@ -52,7 +52,7 @@ export default function AlarmApp() {
   ]
 
   return (
-    <div className="flex flex-col h-[667px] w-[375px] bg-white overflow-hidden relative">
+    <div className="flex flex-col flex-1 bg-white">
       {/* Main App Content */}
       <div className="flex-1 flex flex-col">
         <Tabs value={activeTab} onValueChange={setActiveTab} className="flex-1 flex flex-col">
