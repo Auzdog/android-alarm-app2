@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="gray_500">#6B7280</color>
+    <color name="gray_600">#757575</color>
     <color name="ic_launcher_background">#FF9800</color>
+    <color name="orange_100">#FFE0B2</color>
     <color name="orange_500">#FF9800</color>
     <color name="orange_700">#F57C00</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="add_alarm">Add Alarm</string>
     <string name="app_name">Alarm App</string>
-    <style name="Theme.AlarmApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="BottomNavText" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="android:lineSpacingExtra">0dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Theme.AlarmApp" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/orange_500</item>
         <item name="colorPrimaryVariant">@color/orange_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="colorSecondary">@color/orange_500</item>
+        <item name="colorSecondaryContainer">@color/orange_100</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:elevation">0dp</item>
+        <item name="itemRippleColor">@android:color/transparent</item>
+        <item name="itemActiveIndicatorStyle">@null</item>
+        <item name="materialThemeOverlay">@null</item>
+        <item name="backgroundTint">@null</item>
+        <item name="itemIconSize">20dp</item>
+        <item name="itemIconPadding">4dp</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="itemPaddingTop">0dp</item>
+        <item name="itemPaddingBottom">0dp</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavText</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavText</item>
+        <item name="itemTextColor">@color/bottom_nav_colors</item>
+        <item name="itemIconTint">@color/bottom_nav_colors</item>
     </style>
 </resources>

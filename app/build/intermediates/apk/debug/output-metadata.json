@@ -8,12 +8,12 @@
   "variantName": "debug",
   "elements": [
     {
-      "type": "SINGLE",
+      "type": "UNIVERSAL",
       "filters": [],
       "attributes": [],
       "versionCode": 1,
       "versionName": "1.0",
-      "outputFile": "app-debug.apk"
+      "outputFile": "app-universal-debug.apk"
     }
   ],
   "elementType": "File"

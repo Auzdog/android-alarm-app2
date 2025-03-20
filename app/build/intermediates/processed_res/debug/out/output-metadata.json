@@ -8,12 +8,12 @@
   "variantName": "debug",
   "elements": [
     {
-      "type": "SINGLE",
+      "type": "UNIVERSAL",
       "filters": [],
       "attributes": [],
       "versionCode": 1,
       "versionName": "1.0",
-      "outputFile": "resources-debug.ap_"
+      "outputFile": "resources-universalDebug.ap_"
     }
   ],
   "elementType": "File"

@@ -1,42 +1,86 @@
 [
     {
-        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-merged_res-47:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-main-49:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\drawable_ic_add.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\drawable\\ic_add.xml"
     },
     {
-        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-merged_res-47:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-main-49:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-merged_res-47:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-main-49:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\drawable_ic_settings.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\drawable\\ic_settings.xml"
     },
     {
-        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-merged_res-47:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-main-49:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\drawable_ic_bell.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\drawable\\ic_bell.xml"
     },
     {
-        "merged": "com.example.alarmapp-merged_res-47:/drawable_ic_settings.xml.flat",
-        "source": "com.example.alarmapp-main-49:/drawable/ic_settings.xml"
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\layout_fragment_settings.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "com.example.alarmapp-merged_res-47:/drawable_ic_bell.xml.flat",
-        "source": "com.example.alarmapp-main-49:/drawable/ic_bell.xml"
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\color_bottom_nav_colors.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\color\\bottom_nav_colors.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\drawable_ic_timer.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\drawable\\ic_timer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\navigation\\nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\drawable_ic_stopwatch.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\drawable\\ic_stopwatch.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\drawable_ic_alarm.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\drawable\\ic_alarm.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "com.example.alarmapp-merged_res-47:/drawable_ic_timer.xml.flat",
         "source": "com.example.alarmapp-main-49:/drawable/ic_timer.xml"
     },
     {
-        "merged": "com.example.alarmapp-merged_res-47:/drawable_ic_add.xml.flat",
-        "source": "com.example.alarmapp-main-49:/drawable/ic_add.xml"
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\drawable_nav_background.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\drawable\\nav_background.xml"
     },
     {
-        "merged": "com.example.alarmapp-merged_res-47:/drawable_ic_clock.xml.flat",
-        "source": "com.example.alarmapp-main-49:/drawable/ic_clock.xml"
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\drawable_nav_border.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\drawable\\nav_border.xml"
     },
     {
-        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-merged_res-47:\\menu_bottom_nav_menu.xml.flat",
-        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.10\\com.example.alarmapp-main-49:\\menu\\bottom_nav_menu.xml"
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\layout_fragment_alarm.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\fragment_alarm.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\layout_fragment_stopwatch.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\fragment_stopwatch.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\drawable_nav_top_border.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\drawable\\nav_top_border.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\drawable_ic_clock.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\drawable\\ic_clock.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-merged_res-47:\\layout_fragment_timer.xml.flat",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\fragment_timer.xml"
     }
 ]

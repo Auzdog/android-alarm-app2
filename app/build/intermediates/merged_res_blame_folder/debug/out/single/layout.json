@@ -1,6 +1,26 @@
 [
     {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-mergeDebugResources-46:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-mergeDebugResources-46:\\layout\\fragment_settings.xml",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\fragment_settings.xml"
+    },
+    {
         "merged": "com.example.alarmapp-mergeDebugResources-46:/layout/activity_main.xml",
         "source": "com.example.alarmapp-main-49:/layout/activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-mergeDebugResources-46:\\layout\\fragment_alarm.xml",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\fragment_alarm.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-mergeDebugResources-46:\\layout\\fragment_timer.xml",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\fragment_timer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-mergeDebugResources-46:\\layout\\fragment_stopwatch.xml",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\fragment_stopwatch.xml"
     }
 ]

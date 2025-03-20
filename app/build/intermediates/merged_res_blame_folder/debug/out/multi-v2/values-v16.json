@@ -4,7 +4,7 @@
             "outputFile": "com.example.alarmapp-mergeDebugResources-45:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Auz\\.gradle\\caches\\8.10\\transforms\\b6ae3064e45328dc8cf42d48b4195143\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Auz\\.gradle\\caches\\transforms-3\\3f39031871dbfd8fdda460f13ff18daf\\transformed\\core-1.12.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Auz\\.gradle\\caches\\8.10\\transforms\\7943fd5b8463d2e9cc183d3bb2feb4a2\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Auz\\.gradle\\caches\\transforms-3\\e18b74db9777ec3342aed646071dd983\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

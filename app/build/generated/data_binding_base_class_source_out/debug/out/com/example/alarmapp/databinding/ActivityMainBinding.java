@@ -4,14 +4,16 @@ package com.example.alarmapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentContainerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import androidx.viewpager2.widget.ViewPager2;
 import com.example.alarmapp.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -19,29 +21,82 @@ import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final CoordinatorLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final FloatingActionButton addAlarmButton;
+  public final LinearLayout alarmButton;
 
   @NonNull
-  public final BottomNavigationView bottomNavigation;
+  public final ImageView alarmIcon;
 
   @NonNull
-  public final ViewPager2 viewPager;
+  public final TextView alarmText;
 
-  private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull FloatingActionButton addAlarmButton, @NonNull BottomNavigationView bottomNavigation,
-      @NonNull ViewPager2 viewPager) {
+  @NonNull
+  public final LinearLayout bottomNavContainer;
+
+  @NonNull
+  public final FloatingActionButton fab;
+
+  @NonNull
+  public final FragmentContainerView navHostFragment;
+
+  @NonNull
+  public final LinearLayout settingsButton;
+
+  @NonNull
+  public final ImageView settingsIcon;
+
+  @NonNull
+  public final TextView settingsText;
+
+  @NonNull
+  public final LinearLayout stopwatchButton;
+
+  @NonNull
+  public final ImageView stopwatchIcon;
+
+  @NonNull
+  public final TextView stopwatchText;
+
+  @NonNull
+  public final LinearLayout timerButton;
+
+  @NonNull
+  public final ImageView timerIcon;
+
+  @NonNull
+  public final TextView timerText;
+
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout alarmButton,
+      @NonNull ImageView alarmIcon, @NonNull TextView alarmText,
+      @NonNull LinearLayout bottomNavContainer, @NonNull FloatingActionButton fab,
+      @NonNull FragmentContainerView navHostFragment, @NonNull LinearLayout settingsButton,
+      @NonNull ImageView settingsIcon, @NonNull TextView settingsText,
+      @NonNull LinearLayout stopwatchButton, @NonNull ImageView stopwatchIcon,
+      @NonNull TextView stopwatchText, @NonNull LinearLayout timerButton,
+      @NonNull ImageView timerIcon, @NonNull TextView timerText) {
     this.rootView = rootView;
-    this.addAlarmButton = addAlarmButton;
-    this.bottomNavigation = bottomNavigation;
-    this.viewPager = viewPager;
+    this.alarmButton = alarmButton;
+    this.alarmIcon = alarmIcon;
+    this.alarmText = alarmText;
+    this.bottomNavContainer = bottomNavContainer;
+    this.fab = fab;
+    this.navHostFragment = navHostFragment;
+    this.settingsButton = settingsButton;
+    this.settingsIcon = settingsIcon;
+    this.settingsText = settingsText;
+    this.stopwatchButton = stopwatchButton;
+    this.stopwatchIcon = stopwatchIcon;
+    this.stopwatchText = stopwatchText;
+    this.timerButton = timerButton;
+    this.timerIcon = timerIcon;
+    this.timerText = timerText;
   }
 
   @Override
   @NonNull
-  public CoordinatorLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -66,26 +121,99 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.addAlarmButton;
-      FloatingActionButton addAlarmButton = ViewBindings.findChildViewById(rootView, id);
-      if (addAlarmButton == null) {
+      id = R.id.alarmButton;
+      LinearLayout alarmButton = ViewBindings.findChildViewById(rootView, id);
+      if (alarmButton == null) {
         break missingId;
       }
 
-      id = R.id.bottomNavigation;
-      BottomNavigationView bottomNavigation = ViewBindings.findChildViewById(rootView, id);
-      if (bottomNavigation == null) {
+      id = R.id.alarmIcon;
+      ImageView alarmIcon = ViewBindings.findChildViewById(rootView, id);
+      if (alarmIcon == null) {
         break missingId;
       }
 
-      id = R.id.viewPager;
-      ViewPager2 viewPager = ViewBindings.findChildViewById(rootView, id);
-      if (viewPager == null) {
+      id = R.id.alarmText;
+      TextView alarmText = ViewBindings.findChildViewById(rootView, id);
+      if (alarmText == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((CoordinatorLayout) rootView, addAlarmButton, bottomNavigation,
-          viewPager);
+      id = R.id.bottomNavContainer;
+      LinearLayout bottomNavContainer = ViewBindings.findChildViewById(rootView, id);
+      if (bottomNavContainer == null) {
+        break missingId;
+      }
+
+      id = R.id.fab;
+      FloatingActionButton fab = ViewBindings.findChildViewById(rootView, id);
+      if (fab == null) {
+        break missingId;
+      }
+
+      id = R.id.nav_host_fragment;
+      FragmentContainerView navHostFragment = ViewBindings.findChildViewById(rootView, id);
+      if (navHostFragment == null) {
+        break missingId;
+      }
+
+      id = R.id.settingsButton;
+      LinearLayout settingsButton = ViewBindings.findChildViewById(rootView, id);
+      if (settingsButton == null) {
+        break missingId;
+      }
+
+      id = R.id.settingsIcon;
+      ImageView settingsIcon = ViewBindings.findChildViewById(rootView, id);
+      if (settingsIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.settingsText;
+      TextView settingsText = ViewBindings.findChildViewById(rootView, id);
+      if (settingsText == null) {
+        break missingId;
+      }
+
+      id = R.id.stopwatchButton;
+      LinearLayout stopwatchButton = ViewBindings.findChildViewById(rootView, id);
+      if (stopwatchButton == null) {
+        break missingId;
+      }
+
+      id = R.id.stopwatchIcon;
+      ImageView stopwatchIcon = ViewBindings.findChildViewById(rootView, id);
+      if (stopwatchIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.stopwatchText;
+      TextView stopwatchText = ViewBindings.findChildViewById(rootView, id);
+      if (stopwatchText == null) {
+        break missingId;
+      }
+
+      id = R.id.timerButton;
+      LinearLayout timerButton = ViewBindings.findChildViewById(rootView, id);
+      if (timerButton == null) {
+        break missingId;
+      }
+
+      id = R.id.timerIcon;
+      ImageView timerIcon = ViewBindings.findChildViewById(rootView, id);
+      if (timerIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.timerText;
+      TextView timerText = ViewBindings.findChildViewById(rootView, id);
+      if (timerText == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((ConstraintLayout) rootView, alarmButton, alarmIcon, alarmText,
+          bottomNavContainer, fab, navHostFragment, settingsButton, settingsIcon, settingsText,
+          stopwatchButton, stopwatchIcon, stopwatchText, timerButton, timerIcon, timerText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

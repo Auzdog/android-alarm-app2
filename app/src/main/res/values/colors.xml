@@ -2,7 +2,10 @@
 <resources>
     <color name="orange_500">#FF9800</color>
     <color name="orange_700">#F57C00</color>
+    <color name="orange_100">#FFE0B2</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="ic_launcher_background">#FF9800</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_500">#6B7280</color>
 </resources> 

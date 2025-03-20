@@ -1,33 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:layout_height="match_parent">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:menu="@menu/bottom_nav_menu"
-        style="@style/Widget.MaterialComponents.BottomNavigationView"/>
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/nav_graph" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addAlarmButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="76dp"
+        android:id="@+id/fab"
+        android:layout_width="84dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="80dp"
         android:backgroundTint="@color/orange_500"
-        app:tint="@android:color/white"
-        app:srcCompat="@drawable/ic_add"/>
+        android:contentDescription="@string/add_alarm"
+        android:stateListAnimator="@null"
+        app:borderWidth="0dp"
+        app:elevation="0dp"
+        app:fabCustomSize="84dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:maxImageSize="36dp"
+        app:pressedTranslationZ="0dp"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+        app:srcCompat="@drawable/ic_add"
+        app:tint="@android:color/white" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout> 
+    <!-- Custom Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNavContainer"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@android:color/white"
+        android:elevation="0dp"
+        android:foreground="@drawable/nav_top_border"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Alarm Button -->
+        <LinearLayout
+            android:id="@+id/alarmButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/alarmIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_alarm"
+                app:tint="@color/bottom_nav_colors" />
+
+            <TextView
+                android:id="@+id/alarmText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alarm"
+                android:textColor="@color/bottom_nav_colors"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Stopwatch Button -->
+        <LinearLayout
+            android:id="@+id/stopwatchButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/stopwatchIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_stopwatch"
+                app:tint="@color/bottom_nav_colors" />
+
+            <TextView
+                android:id="@+id/stopwatchText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stopwatch"
+                android:textColor="@color/bottom_nav_colors"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Timer Button -->
+        <LinearLayout
+            android:id="@+id/timerButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/timerIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_timer"
+                app:tint="@color/bottom_nav_colors" />
+
+            <TextView
+                android:id="@+id/timerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer"
+                android:textColor="@color/bottom_nav_colors"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Settings Button -->
+        <LinearLayout
+            android:id="@+id/settingsButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/settingsIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/ic_settings"
+                app:tint="@color/bottom_nav_colors" />
+
+            <TextView
+                android:id="@+id/settingsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="@color/bottom_nav_colors"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout> 

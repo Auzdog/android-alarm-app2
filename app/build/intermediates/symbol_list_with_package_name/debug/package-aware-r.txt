@@ -1400,6 +1400,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color bottom_nav_colors
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1460,6 +1461,8 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray_500
+color gray_600
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color ic_launcher_background
@@ -2116,6 +2119,7 @@ color mtrl_textinput_focused_box_stroke_color
 color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
+color orange_100
 color orange_500
 color orange_700
 color primary_dark_material_dark
@@ -3033,6 +3037,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_add
+drawable ic_alarm
 drawable ic_arrow_back_black_24
 drawable ic_bell
 drawable ic_call_answer
@@ -3055,6 +3060,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
 drawable ic_settings
+drawable ic_stopwatch
 drawable ic_timer
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3114,6 +3120,9 @@ drawable mtrl_switch_thumb_unchecked_pressed
 drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
+drawable nav_background
+drawable nav_border
+drawable nav_top_border
 drawable navigation_empty_icon
 drawable notification_action_background
 drawable notification_bg
@@ -3202,7 +3211,10 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addAlarmButton
+id alarmButton
+id alarmFragment
+id alarmIcon
+id alarmText
 id alertTitle
 id aligned
 id all
@@ -3227,7 +3239,7 @@ id beginning
 id bestChoice
 id blocking
 id bottom
-id bottomNavigation
+id bottomNavContainer
 id bounce
 id bounceBoth
 id bounceEnd
@@ -3316,6 +3328,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab
 id fade
 id fill
 id fill_horizontal
@@ -3437,8 +3450,9 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_controller_view_tag
+id nav_graph
+id nav_host_fragment
 id nav_host_fragment_container
-id navigation_alarm
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3446,9 +3460,6 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
-id navigation_settings
-id navigation_stopwatch
-id navigation_timer
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3532,6 +3543,10 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id settingsButton
+id settingsFragment
+id settingsIcon
+id settingsText
 id sharedValueSet
 id sharedValueUnset
 id shortcut
@@ -3568,6 +3583,10 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id stop
+id stopwatchButton
+id stopwatchFragment
+id stopwatchIcon
+id stopwatchText
 id stretch
 id submenuarrow
 id submit_area
@@ -3603,6 +3622,10 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id timerButton
+id timerFragment
+id timerIcon
+id timerText
 id title
 id titleDividerNoCustom
 id title_template
@@ -3624,7 +3647,6 @@ id unlabeled
 id up
 id useLogo
 id vertical_only
-id viewPager
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3774,6 +3796,10 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_alarm
+layout fragment_settings
+layout fragment_stopwatch
+layout fragment_timer
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
@@ -3837,9 +3863,9 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+navigation nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -3868,6 +3894,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_alarm
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -4298,6 +4325,7 @@ style Base_Widget_MaterialComponents_Snackbar
 style Base_Widget_MaterialComponents_TextInputEditText
 style Base_Widget_MaterialComponents_TextInputLayout
 style Base_Widget_MaterialComponents_TextView
+style BottomNavText
 style CardView
 style CardView_Dark
 style CardView_Light
@@ -4751,6 +4779,7 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText
 style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
+style Widget_App_BottomNavigationView
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
