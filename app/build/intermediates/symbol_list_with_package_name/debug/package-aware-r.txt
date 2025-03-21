@@ -1461,6 +1461,9 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray_200
+color gray_400
+color gray_50
 color gray_500
 color gray_600
 color highlighted_text_material_dark
@@ -2142,6 +2145,8 @@ color switch_thumb_material_dark
 color switch_thumb_material_light
 color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
+color switch_thumb_selector
+color switch_track_selector
 color tooltip_background_dark
 color tooltip_background_light
 color white
@@ -3049,6 +3054,7 @@ drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock
 drawable ic_clock_black_24dp
+drawable ic_delete
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_foreground
 drawable ic_m3_chip_check
@@ -3212,8 +3218,11 @@ id actions
 id activity_chooser_view_content
 id add
 id alarmButton
+id alarmCard
 id alarmFragment
 id alarmIcon
+id alarmList
+id alarmSwitch
 id alarmText
 id alertTitle
 id aligned
@@ -3233,6 +3242,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
+id baseContainer
 id baseline
 id beginOnFirstDraw
 id beginning
@@ -3288,6 +3298,7 @@ id decelerate
 id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
+id deleteButton
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -3327,6 +3338,7 @@ id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
+id expandableContent
 id expanded_menu
 id fab
 id fade
@@ -3371,12 +3383,16 @@ id immediateStop
 id included
 id indeterminate
 id info
+id interactiveLayer
 id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id labelInput
+id labelInputLayout
+id labelText
 id labeled
 id layout
 id left
@@ -3390,6 +3406,7 @@ id list_item
 id locale
 id ltr
 id m3_side_sheet
+id mainContent
 id marquee
 id masked
 id match_constraint
@@ -3622,6 +3639,9 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id timeContainer
+id timePickerContainer
+id timeText
 id timerButton
 id timerFragment
 id timerIcon
@@ -3780,6 +3800,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout alarm_item
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3796,12 +3817,14 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_time_picker
 layout fragment_alarm
 layout fragment_settings
 layout fragment_stopwatch
 layout fragment_timer
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_alarm
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-mergeDebugResources-46:\\layout\\item_alarm.xml",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\item_alarm.xml"
+    },
+    {
         "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-mergeDebugResources-46:\\layout\\activity_main.xml",
         "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\activity_main.xml"
     },
@@ -8,8 +12,8 @@
         "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\fragment_settings.xml"
     },
     {
-        "merged": "com.example.alarmapp-mergeDebugResources-46:/layout/activity_main.xml",
-        "source": "com.example.alarmapp-main-49:/layout/activity_main.xml"
+        "merged": "com.example.alarmapp-mergeDebugResources-46:/layout/item_alarm.xml",
+        "source": "com.example.alarmapp-main-49:/layout/item_alarm.xml"
     },
     {
         "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-mergeDebugResources-46:\\layout\\fragment_alarm.xml",
@@ -22,5 +26,13 @@
     {
         "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-mergeDebugResources-46:\\layout\\fragment_stopwatch.xml",
         "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\fragment_stopwatch.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-mergeDebugResources-46:\\layout\\dialog_time_picker.xml",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\dialog_time_picker.xml"
+    },
+    {
+        "merged": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-mergeDebugResources-46:\\layout\\alarm_item.xml",
+        "source": "C:\\Users\\Auz\\.gradle\\daemon\\8.2\\com.example.alarmapp-main-49:\\layout\\alarm_item.xml"
     }
 ]

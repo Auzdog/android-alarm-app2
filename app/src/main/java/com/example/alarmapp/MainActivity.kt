@@ -1,14 +1,26 @@
 package com.example.alarmapp
 
+import android.content.DialogInterface
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.LinearLayout
+import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import com.example.alarmapp.databinding.ActivityMainBinding
+import com.example.alarmapp.databinding.DialogTimePickerBinding
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.textfield.TextInputEditText
+import com.google.android.material.timepicker.MaterialTimePicker
+import com.google.android.material.timepicker.TimeFormat
+import java.util.Calendar
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private val viewModel: AlarmViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,13 +52,32 @@ class MainActivity : AppCompatActivity() {
             updateNavSelection(NavSection.SETTINGS)
         }
 
-        // FAB click listener (we'll implement this later)
+        // FAB click listener
         binding.fab.setOnClickListener {
-            // TODO: Implement FAB click action
+            showTimePicker()
         }
 
         // Set initial selection
         updateNavSelection(NavSection.ALARM)
+    }
+
+    private fun showTimePicker() {
+        val calendar = Calendar.getInstance()
+        val currentHour = calendar.get(Calendar.HOUR_OF_DAY)
+        val currentMinute = calendar.get(Calendar.MINUTE)
+
+        val picker = MaterialTimePicker.Builder()
+            .setTimeFormat(TimeFormat.CLOCK_12H)
+            .setHour(currentHour)
+            .setMinute(currentMinute)
+            .setTitleText("Set alarm time")
+            .build()
+
+        picker.addOnPositiveButtonClickListener {
+            viewModel.addAlarm(picker.hour, picker.minute)
+        }
+
+        picker.show(supportFragmentManager, "time_picker")
     }
 
     private enum class NavSection {
